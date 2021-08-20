@@ -26,10 +26,244 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
 	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
 	<link rel="stylesheet" href="styles/main.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+	</style>
 </head>
 
 <body>
-	@@include("../blocks/modules/header/header.html")
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  1   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-header">
+		<div class="wrapper">
+			@@include("../blocks/modules/header/header.html")
+			<h1 class="section-header__h1">Жилой комплекс HOMEFOR  - это жизнь с комфортом</h1>
+			<p class="section-header__text">Мы охватываем все важные этапы проектирование и строительство дома, а также повседневная эксплуатация после окончания строительства.</p>
+			<button class="section-header__btn">подробнее</button>
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  2   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-filter">
+		<div class="wrapper">
+			
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  3   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-suburban">
+		<div class="wrapper">
+			<h2 class="title">Загородные дома</h2>
+			<p class="section-suburban__text">Наши дома расположились в уютных районах Екатеринбурга: Верх-Исетский район, Железнодорожный район, Чкаловский район.</p>
+			<ul class="suburban-list">
+				<li class="suburban-list-item suburban-list__img1">
+					<p class="suburban-list-item__text">Дом  “Брусника”<br><span>ул. Карла Маркса, 60, Екатеринбург</span></p>
+					<button class="suburban-list-item__btn"></button>
+					<div class="suburban-footer">
+						<ul class="suburban-footer-list">
+							<li class="suburban-footer-list__home">200 м2</li>
+							<li class="suburban-footer-list__area">10 сот</li>
+							<li class="suburban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="suburban-footer__text">7 005 456 500 ₽</p>
+					</div>
+				</li>
+				<li class="suburban-list-item suburban-list__img2">
+					<p class="suburban-list-item__text">Дом  “Трендис”<br><span>ул. Урицкого, 13, Екатеринбург</span></p>
+					<button class="suburban-list-item__btn"></button>
+					<div class="suburban-footer">
+						<ul class="suburban-footer-list">
+							<li class="suburban-footer-list__home">500 м2</li>
+							<li class="suburban-footer-list__area">12 сот</li>
+							<li class="suburban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="suburban-footer__text">10 000 234 500 ₽</p>
+					</div>
+				</li>
+				<li class="suburban-list-item suburban-list__img3">
+					<p class="suburban-list-item__text">Дома  “Панорома”<br><span>ул. Толстого, 340, Екатеринбург</span></p>
+					<button class="suburban-list-item__btn"></button>
+					<div class="suburban-footer">
+						<ul class="suburban-footer-list">
+							<li class="suburban-footer-list__home">150 м2</li>
+							<li class="suburban-footer-list__area">13 сот</li>
+							<li class="suburban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="suburban-footer__text">5 045 000 500 ₽</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  4   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-urban">
+		<div class="wrapper">
+			<h2 class="title">Городские квартиры</h2>
+			<p class="section-urban__text">В каталоге квартир вы найдете актуальные планировки и цены. Это те квартиры, которые есть в продаже сейчас.	</p>
+			<ul class="urban-list">
+				<li class="urban-list-item urban-list__img1">
+					<p class="urban-list-item__text">Дом  “Жуковка”<br><span>ул. Карла Маркса, 60, Екатеринбург</span></p>
+					<button class="urban-list-item__btn"></button>
+					<div class="urban-footer">
+						<ul class="urban-footer-list">
+							<li class="urban-footer-list__home">72м2</li>
+							<li class="urban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="urban-footer__text">3 006 435 500 ₽</p>
+					</div>
+				</li>
+				<li class="urban-list-item urban-list__img2">
+					<p class="urban-list-item__text">Дом  “Парашют”<br><span>ул. Зорге, 160, Екатеринбург</span></p>
+					<button class="urban-list-item__btn"></button>
+					<div class="urban-footer">
+						<ul class="urban-footer-list">
+							<li class="urban-footer-list__home">112 м2</li>
+							<li class="urban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="urban-footer__text">5 000 974 500 ₽</p>
+					</div>
+				</li>
+				<li class="urban-list-item urban-list__img3">
+					<p class="urban-list-item__text">Дом  “Весна”<br><span>ул. Заречная, 120, Екатеринбург</span></p>
+					<button class="urban-list-item__btn"></button>
+					<div class="urban-footer">
+						<ul class="urban-footer-list">
+							<li class="urban-footer-list__home">100 м2</li>
+							<li class="urban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="urban-footer__text">6 120 412 500 ₽</p>
+					</div>
+				</li>
+				<li class="urban-list-item urban-list__img4">
+					<p class="urban-list-item__text">Дом  “Пионер”<br><span>ул. Карла Маркса, 120, Екатеринбург</span</p>
+						><button class="urban-list-item__btn"></button>
+						<div class="urban-footer">
+							<ul class="urban-footer-list">
+								<li class="urban-footer-list__home">90 м2</li>
+								<li class="urban-footer-list__painting">с отдекой</li>
+							</ul>
+							<p class="urban-footer__text">3 120 000 500 ₽</p>
+						</div>
+				</li>
+				<li class="urban-list-item urban-list__img5">
+					<p class="urban-list-item__text">Дом  “Манхетен”<br><span>ул. Московская, 10, Екатеринбург</span></p>
+					<button class="urban-list-item__btn"></button>
+					<div class="urban-footer">
+						<ul class="urban-footer-list">
+							<li class="urban-footer-list__home">87 м2</li>
+							<li class="urban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="urban-footer__text">6 000 456 000 ₽</p>
+					</div>
+				</li>
+				<li class="urban-list-item urban-list__img6">
+					<p class="urban-list-item__text">Дом  “Дружба”<br><span>ул. Прашина, 60, Екатеринбург</span></p>
+					<button class="urban-list-item__btn"></button>
+					<div class="urban-footer">
+						<ul class="urban-footer-list">
+							<li class="urban-footer-list__home">50 м2</li>
+							<li class="urban-footer-list__painting">с отдекой</li>
+						</ul>
+						<p class="urban-footer__text">4 012 400 500 ₽</p>
+					</div>
+				</li>
+			</ul>
+			<button class="urban-btn">Смотреть больше</button>
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  5   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-general">
+		<div class="wrapper">
+			<h2 class="title">Генплан</h2>
+			<p class="section-general__text">На генплане вы можете посмотреть территорию покупки. В поселке все предусмотрено. Здесь проведены необходимые коммуникации.Это место влюбляет в себя.</p>
+			<ul class="general-list">
+				<li class="general-list__item">Загородные дома</li>
+				<li class="general-list__item">Городские квартиры</li>
+			</ul>
+		</div>
+		<div class="general-map">
+			<img src="img/image-map.png" alt="Map">
+			<p class="general-map__item general-map__text1">Дом 23</p>
+			<p class="general-map__item general-map__text2">Дом 56<br><span>Вы можете приобрести<br>10 567 457руб</span></p>
+			<p class="general-map__item general-map__text3">Дом 234</p>
+			<p class="general-map__item general-map__text4">Дом 116</p>
+			<p class="general-map__item general-map__text5">школа №27</p>
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  6   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-about">
+		<div class="wrapper">
+			<h2 class="title">О компании</h2>
+			<p class="section-about__text">Профессиональный оператор рынка элитной недвижимости с 2008 года.<br>HOMEFOR – это сочетание репутации, многолетнего опыта и высокого уровня сервиса. Компания заслужила доверие и признание профессиональных участников рынка </p>
+			<ul class="about-list">
+				<li class="about-list__item">
+					<p class="about-list__sketch"></p>
+					<p class="about-list__text">Большой опыт в&nbsp;строительстве</p>
+				</li>
+				<li class="about-list__item">
+					<p class="about-list__price-2"></p>
+					<p class="about-list__text">Доступные цены</p>
+				</li>
+				<li class="about-list__item">
+					<p class="about-list__time"></p>
+					<p class="about-list__text">Оперативные сроки работы</p>
+				</li>
+				<li class="about-list__item">
+					<p class="about-list__quality"></p>
+					<p class="about-list__text">Качественные материалы</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  7   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-news">
+		<div class="wrapper">
+			<h2 class="title">Наши новости</h2>
+			<p class="section-news__text">Узнай новости компании первым. Мы всегда остаемся в тренде.</p>
+			<ul class="news-list">
+				<li class="news-list-item news-list__img1 textWhite">
+					<p class="news-list-item__data">02.04.2020</p>
+					<p class="news-list-item__text">В 2018 году происходили изменения в главном законе долевого строительства ФЗ-214 для решения сложной задачи – строительства 120 млн квадратных метров жилья нового качества 
+						и усиления контроля </p>
+					<button class="news-list-item__btn-white">Смотреть больше</button>
+				</li>
+				<li class="news-list-item news-list__img2">
+					<p class="news-list-item__data">02.04.2020</p>
+					<p class="news-list-item__text">В 2018 году происходили изменения в главном законе долевого строительства ФЗ-214 для решения сложной задачи – строительства 120 млн квадратных метров жилья нового качества 
+						и усиления контроля </p>
+					<button class="news-list-item__btn">Смотреть больше</button>
+				</li>
+				<li class="news-list-item news-list__img3">
+					<p class="news-list-item__data">02.04.2020</p>
+					<p class="news-list-item__text">В 2018 году происходили изменения в главном законе долевого строительства ФЗ-214 для решения сложной задачи – строительства 120 млн квадратных метров жилья нового качества 
+						и усиления контроля </p>
+					<button class="news-list-item__btn">Смотреть больше</button>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ///////////////////////////   S E C T I O N  8   ///////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
+	<section class="section-footer">
+		<div class="wrapper">
+			
+		</div>
+	</section>
+	<!-- -------------------------------------------------------------------------- -->
+	<!-- ////////////////////////////////////////////////////////////////////////// -->
+	<!-- -------------------------------------------------------------------------- -->
 	@@include("../blocks/modules/footer/footer.html")
 	<script src="js/main.js"></script>
 	<script src="js/vendor.js"></script>
