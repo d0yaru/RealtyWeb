@@ -47,11 +47,11 @@ body {
 	font-size: 2.5rem;
 }
 //---------------------------------------------------------------------------
-.fon {
+//.fon {
 	//background-image: url(../img/tmp/desktop.png);
 	//background-position: -8px 0;
 	//background-repeat: no-repeat;
-}
+//}
 //---------------------------------------------------------------------------
 ///////////////////////////   S E C T I O N  1   ////////////////////////////
 //---------------------------------------------------------------------------
@@ -129,6 +129,80 @@ body {
 //---------------------------------------------------------------------------
 ///////////////////////////   S E C T I O N  2   ////////////////////////////
 //---------------------------------------------------------------------------
+//--------------------------------------------
+// В браузерах Chrome, Safari и Opera
+//--------------------------------------------
+// Отменим стандартные стили Webkit/Chrome
+input[type=range]
+{
+  -webkit-appearance: none;
+  width: 358px;
+}
+//--------------------------------------------
+input[type=range]::-webkit-slider-runnable-track {
+  height: 1px;
+  background-color: #ccc;
+}
+//--------------------------------------------
+// Теперь изменим ползунок:
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin-top: -3px;
+}
+//--------------------------------------------
+// В браузере Firefox
+//--------------------------------------------
+input[type=range]::-moz-range-track
+{
+  height: 1px;
+  background-color: #ccc;
+}
+ 
+input[type=range]::-moz-range-thumb
+{
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin-top: -3px;
+}
+//--------------------------------------------
+// В браузере Internet Explorer
+//--------------------------------------------
+input[type="range"]::-ms-track {
+  height: 1px;
+  background-color: #ccc;
+}
+ 
+input[type="range"]::-ms-thumb
+{
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin-top: -3px;
+}
+//--------------------------------------------
+#line1 {
+  height: 1px;
+  width: 120px;
+  background: #000;
+  margin-top: -4px;
+  margin-left: 15px;
+}
+//--------------------------------------------
+#line2 {
+	height: 1px;
+	width: 50px;
+	background: #000;
+	margin-top: -4px;
+	margin-left: 15px;
+ }
+ //--------------------------------------------
 .filter {
 	height: 435px;
 	@media (max-width: 960px) {
@@ -393,42 +467,42 @@ body {
 				left: 10px;
 			}
 
-			&__item1 {
-				position: absolute;
-				left: 8px;
-				top: 11px;
-				width: 358px;
-				border-bottom: 1px solid #bbb;
-				@media (max-width: 480px) {
-					width: 295px;
-				}
-			}
-			&__item2 {
-				position: absolute;
-				left: 7px;
-				top: 11px;
-				width: 164px;
-				border-bottom: 1px solid #000;
-			}
+			// &__item1 {
+			// 	position: absolute;
+			// 	left: 8px;
+			// 	top: 11px;
+			// 	width: 358px;
+			// 	border-bottom: 1px solid #bbb;
+			// 	@media (max-width: 480px) {
+			// 		width: 295px;
+			// 	}
+			// }
+			// &__item2 {
+			// 	position: absolute;
+			// 	left: 7px;
+			// 	top: 11px;
+			// 	width: 164px;
+			// 	border-bottom: 1px solid #000;
+			// }
 			&__item3 {
 				position: absolute;
-				left: 4px;
-				top: 8px;
-				width: 6px;
-				height: 6px;
+				left: 10px;
+				top: 10px;
+				width: 8px;
+				height: 8px;
 				background-color: #000;
 				cursor: pointer;
 			}
-			&__item4 {
-				position: absolute;
-				position: absolute;
-				left: 168px;
-				top: 8px;
-				width: 6px;
-				height: 6px;
-				background-color: #000;
-				cursor: pointer;
-			}
+			// &__item4 {
+			// 	position: absolute;
+			// 	position: absolute;
+			// 	left: 168px;
+			// 	top: 8px;
+			// 	width: 6px;
+			// 	height: 6px;
+			// 	background-color: #000;
+			// 	cursor: pointer;
+			// }
 			&__text1 {
 				position: absolute;
 				left: 2px;
@@ -437,7 +511,9 @@ body {
 			&__text2 {
 				position: absolute;
 				left: 157px;
-				top: 16px;
+				top: 18px;
+				border: none;
+				outline: none;
 			}
 			&__text3 {
 				position: absolute;
@@ -469,41 +545,41 @@ body {
 				left: 10px;
 			}
 
-			&__item1 {
-				position: absolute;
-				left: 8px;
-				top: 11px;
-				width: 358px;
-				border-bottom: 1px solid #bbb;
-				@media (max-width: 480px) {
-					width: 295px;
-				}
-			}
-			&__item2 {
-				position: absolute;
-				left: 7px;
-				top: 11px;
-				width: 164px;
-				border-bottom: 1px solid #000;
-			}
+			// &__item1 {
+			// 	position: absolute;
+			// 	left: 8px;
+			// 	top: 11px;
+			// 	width: 358px;
+			// 	border-bottom: 1px solid #bbb;
+			// 	@media (max-width: 480px) {
+			// 		width: 295px;
+			// 	}
+			// }
+			// &__item2 {
+			// 	position: absolute;
+			// 	left: 7px;
+			// 	top: 11px;
+			// 	width: 164px;
+			// 	border-bottom: 1px solid #000;
+			// }
 			&__item3 {
 				position: absolute;
-				left: 4px;
-				top: 8px;
-				width: 6px;
-				height: 6px;
+				left: 9px;
+				top: 10px;
+				width: 8px;
+				height: 8px;
 				background-color: #000;
 				cursor: pointer;
 			}
-			&__item4 {
-				position: absolute;
-				left: 168px;
-				top: 8px;
-				width: 6px;
-				height: 6px;
-				background-color: #000;
-				cursor: pointer;
-			}
+			// &__item4 {
+			// 	position: absolute;
+			// 	left: 168px;
+			// 	top: 8px;
+			// 	width: 6px;
+			// 	height: 6px;
+			// 	background-color: #000;
+			// 	cursor: pointer;
+			// }
 			&__text1 {
 				position: absolute;
 				left: 2px;
@@ -511,8 +587,10 @@ body {
 			}
 			&__text2 {
 				position: absolute;
-				left: 146px;
-				top: 16px;
+				left: 157px;
+    top: 18px;
+    border: none;
+    outline: none;
 			}
 			&__text3 {
 				position: absolute;
@@ -687,6 +765,9 @@ body {
 				cursor: pointer;
 			}
 		}
+		// ------------------------------------------------
+		
+		//-------------------------------------------------
 		&-box3 {
 			border: 1px solid #000;
 			margin: 27px 0 0;
@@ -1954,7 +2035,7 @@ body {
 	}
 
 	&-item {
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
 		width: 461px;
 		height: 398px;
@@ -2012,6 +2093,9 @@ body {
 				top: 4px;
 			}
 		}
+		&__btn:hover {
+			color: #fff;
+		}
 	}
 
 	&__img1 {
@@ -2019,13 +2103,14 @@ body {
 		
 	}
 
-	 &__img2 {
-	// 	background-image: url(../img/suburban/img-2.png);
-	
+	 &__img2:hover {
+	 	background-image: url(../img/suburban/img-2.png);
+		color: #fff;
 	 }
 
-	 &__img3 {
-	// 	background-image: url(../img/suburban/img-3.png);
+	 &__img3:hover {
+	 	background-image: url(../img/suburban/img-3.png);
+		color: #fff;
 		@media (max-width: 1445px) {
 			display: none;
 		}

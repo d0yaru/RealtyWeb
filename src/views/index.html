@@ -29,6 +29,8 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 	</style>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -77,21 +79,37 @@
 				<div class="filter-wrap-box6__text">тыс.</div>
 			</div>
 			<div class="filter-wrap-box7">
-				<div class="filter-wrap-box7__item1"></div>
-				<div class="filter-wrap-box7__item2"></div>
+				<!--  -->
+				<div class="range1">
+					<input type="range" id="r1" oninput="fun1()" min="0" max="358" value="120">
+					<div id="line1"></div>
+				 </div>
+				 <br>
+				 <input class="filter-wrap-box7__text2" type="text" id="i1" value="120">
+				<!--  -->
+				<!-- <div class="filter-wrap-box7__item1"></div> -->
+				<!-- <div class="filter-wrap-box7__item2"></div> -->
 				<div class="filter-wrap-box7__item3"></div>
-				<div class="filter-wrap-box7__item4"></div>
+				<!-- <div class="filter-wrap-box7__item4"></div> -->
 				<div class="filter-wrap-box7__text1">0</div>
-				<div class="filter-wrap-box7__text2">120</div>
+				<!-- <div  class="filter-wrap-box7__text2">120</div> -->
 				<div class="filter-wrap-box7__text3">1 000</div>
 			</div>
 			<div class="filter-wrap-box8">
-				<div class="filter-wrap-box8__item1"></div>
-				<div class="filter-wrap-box8__item2"></div>
+				<!--  -->
+				<div class="range2">
+					<input type="range" id="r2" oninput="fun2()" min="0" max="358" value="50">
+					<div id="line2"></div>
+				 </div>
+				 <br>
+				 <input class="filter-wrap-box8__text2" type="text" id="i2" value="10350">
+				<!--  -->
+				<!-- <div class="filter-wrap-box8__item1"></div> -->
+				<!-- <div class="filter-wrap-box8__item2"></div> -->
 				<div class="filter-wrap-box8__item3"></div>
-				<div class="filter-wrap-box8__item4"></div>
+				<!-- <div class="filter-wrap-box8__item4"></div> -->
 				<div class="filter-wrap-box8__text1">0</div>
-				<div class="filter-wrap-box8__text2">10 350</div>
+				<!-- <div class="filter-wrap-box8__text2">10 350</div> -->
 				<div class="filter-wrap-box8__text3">98 000</div>
 			</div>
 			<div class="filter-wrap-box9">
@@ -120,6 +138,9 @@
 					<div class="suburban-wrap-box2__img1"></div>
 					<div class="suburban-wrap-box2__img2"></div>
 				</div>
+				<!--  -->
+			
+				<!--  -->
 				<div class="suburban-wrap-box3">
 					<div class="suburban-wrap-box3__text1">Дом “Брусника”</div>
 					<div class="suburban-wrap-box3__text2">ул. Карла Маркса, 60,</div>
@@ -335,6 +356,31 @@
 	<!-- ////////////////////////////////////////////////////////////////////////// -->
 	<!-- -------------------------------------------------------------------------- -->
 	@@include("../blocks/modules/footer/footer.html")
+	<!--  -->
+	
+<!--  -->
+	<script>
+		function fun1() {
+			var rng1=document.getElementById('r1'); //rng - это ползунок
+			var i1=document.getElementById('i1'); // i1 - input
+			i1.value=Math.floor(rng1.value*2.794);
+			//------------------------------------------------------------
+			var div1=document.getElementById('line1'); // div - блок line1
+			div1.style.width=rng1.value+'px';
+		}
+		function fun2() {
+			var rng2=document.getElementById('r2'); //rng - это ползунок
+			var i2=document.getElementById('i2'); // i1 - input
+			i2.value=Math.floor(rng2.value*273.744);
+			//------------------------------------------------------------
+			var div2=document.getElementById('line2'); // div - блок line1
+			div2.style.width=rng2.value+'px';
+		}
+		// slider
+		//--
+		
+			//--
+	</script>
 	<script src="js/main.js"></script>
 	<script src="js/vendor.js"></script>
 </div>
