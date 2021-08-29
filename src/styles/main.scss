@@ -709,7 +709,7 @@ input[type="range"]::-ms-thumb
 			}
 		}
 		&-box2 {
-			margin: 78px 0 0;
+			margin: 78px 0 13px;
 			height: 30px;
 			position: relative;
 
@@ -766,11 +766,11 @@ input[type="range"]::-ms-thumb
 			}
 		}
 		// ------------------------------------------------
-		
+
 		//-------------------------------------------------
 		&-box3 {
 			border: 1px solid #000;
-			margin: 27px 0 0;
+			//margin: 27px 0 0;
 			height: 545px;
 			width: 460px;
 			position: relative;
@@ -889,13 +889,13 @@ input[type="range"]::-ms-thumb
 		}
 		&-box4 {
 			border: 1px solid #000;
-			margin: -547px 483px 0;
+			//margin: -547px 483px 0;
 			height: 545px;
 			width: 460px;
 			position: relative;
 			@media (max-width: 1445px) {
 				width: 365px;
-				margin: -547px 409px 0;
+				//margin: -547px 409px 0;
 			}
 
 			&__text1 {
@@ -990,16 +990,16 @@ input[type="range"]::-ms-thumb
 		}
 		&-box5 {
 			border: 1px solid #000;
-			margin: -547px 965px 0;
+			//margin: -547px 965px 0;
 			height: 545px;
 			width: 460px;
 			position: relative;
 			@media (max-width: 1445px) {
 				width: 365px;
-				margin: -547px 814px 0;
+				//margin: -547px 814px 0;
 			}
 			@media (max-width: 1200px) {
-				display: none;
+				//display: none;
 			}
 		
 
@@ -2145,6 +2145,36 @@ input[type="range"]::-ms-thumb
 .textWhite {
 	color: $white;
 }
+//-----------------------------------------------------------
+//-------------------------------------------------
+.slick-dots {
+	text-align: center;
+  margin: 50px 0 0 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    &.slick-active {
+      button {
+        background-color:black;
+      }
+    }
+    button {
+      font-size: 0;
+      line-height: 0;
+      background-color:#999;
+      border:none;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+		:hover{
+			background-color: black;
+		}
+  }
+}
+//-------------------------------------------------
 //---------------------------------------------------------------------------
 /////////////////////////////////////////////////////////////////////////////
 //---------------------------------------------------------------------------
